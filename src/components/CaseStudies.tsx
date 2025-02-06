@@ -26,7 +26,7 @@ const caseStudiesDetails = {
       'Drove cross-sell of complementary investor management tools'
     ],
     outcomes: [
-      '40% increase in adoption',
+      '30% increase in adoption',
       'Improved customer retention through essential collaboration tools',
       'Higher revenue per customer through up-sell strategy'
     ]
@@ -58,8 +58,8 @@ const caseStudies = [
   {
     title: 'Workspaces',
     company: 'Altvia - ShareSecure',
-    description: 'Designed and implemented secure collaboration spaces with structured workflows for fundraising, due diligence, and portfolio monitoring.',
-    impact: '40% increase in adoption',
+    description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows. Designed and launched permission-controlled workspaces with pre-configured templates for fundraising, due diligence, and portfolio monitoring, enhancing investor transparency and operational efficiency.',
+    impact: '30% increase in adoption',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
   {
