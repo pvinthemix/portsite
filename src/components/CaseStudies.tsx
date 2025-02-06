@@ -50,15 +50,15 @@ const caseStudiesDetails = {
 const caseStudies = [
   {
     title: 'Landing Pages',
-    company: 'Altvia - ShareSecure',
+    company: 'Altvia',
     description: 'Led development of customized investor portals, transforming fundraising and reporting workflows with enhanced engagement features.',
     impact: '25% increase in investor engagement',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
   },
   {
     title: 'Workspaces',
-    company: 'Altvia - ShareSecure',
-    description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows. Designed and launched permission-controlled workspaces with pre-configured templates for fundraising, due diligence, and portfolio monitoring, enhancing investor transparency and operational efficiency.',
+    company: 'Altvia',
+    description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows. Designed and launched permission-controlled workspaces with pre-configured templates for fundraising, due diligence, and investor relations, enhancing investor transparency and operational efficiency.',
     impact: '30% increase in adoption',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
@@ -66,7 +66,7 @@ const caseStudies = [
     title: 'AI-Powered Fundraising',
     company: 'Altvia',
     description: 'Leading development of AI-driven investor automation with multi-agent workflows for prospecting, outreach, and sentiment analysis.',
-    impact: '50% projected reduction in manual operations',
+    impact: '50% projected reduction in manual operation workflow',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
   }
 ];
