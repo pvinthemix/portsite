@@ -4,17 +4,17 @@ const metrics = [
   {
     value: '200%',
     label: 'ARR Growth',
-    description: 'Scaled from $5M to $15M through strategic product development'
+    description: 'Accelerated ARR growth to 4x targets through strategic product development, aligning innovation with market needs to drive revenue expansion.'
   },
   {
-    value: '92.8%',
+    value: '95%',
     label: 'Gross Retention',
-    description: 'Driven by feature expansion and improved investor collaboration'
+    description: 'Consistent gross retention by impactful product strategy and feature enhancements'
   },
   {
-    value: '109.2%',
+    value: '110%',
     label: 'Net Retention',
-    description: 'Achieved through workflow automation and enhanced engagement'
+    description: 'Consistent Net Retention Rates by implementing workflow automation and engagement strategies that drive expansion revenue and long-term customer loyalty.'
   }
 ];
 
