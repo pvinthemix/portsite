@@ -2,8 +2,8 @@ import React from 'react';
 
 const skillCategories = [
   {
-    name: 'AI & Machine Learning',
-    skills: ['GPT & Claude.ai Integration', 'AI Prototyping', 'Machine Learning Design', 'Predictive Analytics']
+    name: 'AI & Automation',
+    skills: ['GPT & Claude.ai Integration', 'AI Prototyping', 'Agents', 'Predictive Analytics']
   },
   {
     name: 'Product Development',
@@ -15,7 +15,7 @@ const skillCategories = [
   },
   {
     name: 'Domain Expertise',
-    skills: ['Private Equity', 'Venture Capital', 'Workflow Automation', 'Enterprise Software']
+    skills: ['SaaS Product Management', 'B2B Software', 'Workflow Automation', 'Enterprise Solutions', 'AI & Data-Driven Products', 'Fintech & Investment Platforms']
   }
 ];
 

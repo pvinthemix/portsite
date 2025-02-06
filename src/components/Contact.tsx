@@ -14,7 +14,7 @@ export default function Contact() {
               This portfolio website highlights my experience leading product strategy, AI-driven workflow automation, and SaaS innovation across private equity, venture capital, fintech, and enterprise software. My work focuses on building scalable solutions that drive revenue growth, expand market reach, and enhance customer retention.
             </p>
             <p className="text-lg text-gray-600">
-              With a background in both product management and software engineering, I have led the development of AI-powered investor engagement tools, fundraising automation platforms, and enterprise SaaS solutions. This portfolio provides an overview of key product initiatives, the impact they have driven, and the strategic vision behind them.
+              With a background in both product management and software engineering ('built this website'), I have led the development of AI-powered investor engagement tools, fundraising automation platforms, and enterprise SaaS solutions. This portfolio provides an overview of key product initiatives, the impact they have driven, and the strategic vision behind them.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
