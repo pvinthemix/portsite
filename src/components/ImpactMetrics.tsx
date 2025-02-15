@@ -2,19 +2,19 @@ import React from 'react';
 
 const metrics = [
   {
-    value: '~200%',
+    value: '200%+',
     label: 'Revenue Growth & Expansion',
-    description: 'Drove revenue growth by optimizing pricing models, increasing ASP, and launching high-value features that expanded market reach and accelerated ARR.'
+    description: 'Relentlessly drive revenue growth by optimizing pricing models, increasing ASP, and launching high-value features, consistently achieving 200%+ ARR growth by expanding market reach and maximizing customer value.'
   },
   {
-    value: '+95%',
+    value: '95%+',
     label: 'Retention & Engagement',
     description: 'Consistently drive product iniatitives thaqt drive KPIs like 95-100% Gross Retention Rate by streamlining onboarding, enhancing user workflows, and driving feature adoption, ensuring long-term customer loyalty and sustained engagement.'
   },
   {
-    value: "110%+",
-    label: "Efficiency & Adoption",
-    description: "Continuously drive efficiency and adoption improvements by reducing time-to-value, enhancing UX, and minimizing support overhead, consistently achieving a 110%+ Net Retention Rate through expansion revenue and long-term customer engagement."
+    value: '110%+',
+    label: 'Efficiency & Adoption',
+    description: 'Continuously drive efficiency and adoption improvements by reducing time-to-value, enhancing UX, and minimizing support overhead, consistently achieving a 110%+ Net Retention Rate through expansion revenue and long-term customer engagement.'
   }
 ];
 
