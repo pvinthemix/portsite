@@ -9,7 +9,7 @@ const metrics = [
   {
     value: '95%+',
     label: 'Retention & Engagement',
-    description: 'Consistently drive product iniatitives thaqt drive KPIs like 95-100% Gross Retention Rate by streamlining onboarding, enhancing user workflows, and driving feature adoption, ensuring long-term customer loyalty and sustained engagement.'
+    description: 'Consistently drive product iniatitives that drive KPIs such as 95-100% Gross Retention Rates YoY by streamlining onboarding, enhancing user workflows, and driving feature adoption, ensuring long-term customer loyalty and sustained engagement.'
   },
   {
     value: '110%+',
