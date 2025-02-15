@@ -114,15 +114,6 @@ export default function CaseStudies() {
                     size={20}
                   />
                 </div>
-                <a
-          
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="text-sm text-blue-600 mb-4 hover:underline inline-block"
-                >
-                  {study.company}
-                </a>
                 <p className="text-gray-600 mb-4">{study.description}</p>
                 <p className="text-sm font-medium text-gray-900">{study.impact}</p>
               </div>
@@ -136,15 +127,7 @@ export default function CaseStudies() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedStudy}</h3>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {caseStudies.find(s => s.title === selectedStudy)?.company}
-              </a>
             </div>
-            
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Context & Challenge</h4>
               <p className="text-gray-600">{selectedDetails.context}</p>
