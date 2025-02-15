@@ -50,21 +50,21 @@ const caseStudiesDetails = {
 const caseStudies = [
   {
     title: 'Landing Pages',
-    company: 'Altvia',
+    company: 'SaaS Fintech Platform',
     description: 'Led development of customized investor portals, transforming fundraising and reporting workflows with enhanced engagement features.',
     impact: '25% increase in investor engagement',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
   },
   {
     title: 'Workspaces',
-    company: 'Altvia',
+    company: 'SaaS Fintech Platform',
     description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows. Designed and launched permission-controlled workspaces with pre-configured templates for fundraising, due diligence, and investor relations, enhancing investor transparency and operational efficiency.',
     impact: '30% increase in adoption',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
   {
     title: 'AI-Powered Fundraising',
-    company: 'Altvia',
+    company: 'SaaS Fintech Platform',
     description: 'Leading development of AI-driven investor automation with multi-agent workflows for prospecting, outreach, and sentiment analysis.',
     impact: '50% projected reduction in manual operation workflow',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
@@ -83,16 +83,7 @@ const caseStudies = [
       "Partnered with the founder to pivot from B2C to B2B, leading cross-functional collaboration with product and engineering to launch a 3PL/Inventory Management solution integrated with Shopify.",
     impact: "Successful market transition and increased B2B adoption",
     image:
-      "https://images.unsplash.com/photo-1541560052-77ec1bbc09b0?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    title: "SaaS Shopify Integration",
-    company: "Series B Startup",
-    description:
-      "Led integration with a SaaS platform to drive product adoption with Shopify integration, resulting in a 20% increase in customer retention and expansion revenue.",
-    impact: "20% increase in customer retention and expansion revenue",
-    image:
-      "https://images.unsplash.com/photo-1556740736-0d1b830f2935?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1586880244406-556ebe35f282?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
