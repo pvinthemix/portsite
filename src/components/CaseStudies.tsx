@@ -69,6 +69,13 @@ const caseStudies = [
     impact: '50% projected reduction in manual operation workflow',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
   },
+  {
+    title: 'Data Analytics Platform',
+    company: 'Altvia',
+    description: 'Built a comprehensive data analytics platform with ML-driven insights for investment decisions and portfolio optimization.',
+    impact: '35% improvement in decision-making efficiency',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
+  }
 ];
 
 export default function CaseStudies() {
@@ -141,7 +148,6 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
-
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
