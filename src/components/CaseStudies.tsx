@@ -70,11 +70,29 @@ const caseStudies = [
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
   },
   {
-    title: 'Data Analytics Platform',
-    company: 'Altvia',
-    description: 'Built a comprehensive data analytics platform with ML-driven insights for investment decisions and portfolio optimization.',
-    impact: '35% improvement in decision-making efficiency',
+    title: 'Online Courses',
+    company: 'LMS platform',
+    description: 'Spearheaded the launch of Online Courses as a core feature, leveraging UX design and advanced frontend capabilities to enhance user engagement and drive a 25% increase in client acquisition.',
+    impact: 'Client acquisition of 2 major enterprise clients',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    title: "B2C to B2B Pivot & 3PL Solution",
+    company: "Series B Startup",
+    description:
+      "Partnered with the founder to pivot from B2C to B2B, leading cross-functional collaboration with product and engineering to launch a 3PL/Inventory Management solution integrated with Shopify.",
+    impact: "Successful market transition and increased B2B adoption",
+    image:
+      "https://images.unsplash.com/photo-1541560052-77ec1bbc09b0?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: "SaaS Shopify Integration",
+    company: "Series B Startup",
+    description:
+      "Led integration with a SaaS platform to drive product adoption with Shopify integration, resulting in a 20% increase in customer retention and expansion revenue.",
+    impact: "20% increase in customer retention and expansion revenue",
+    image:
+      "https://images.unsplash.com/photo-1556740736-0d1b830f2935?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
