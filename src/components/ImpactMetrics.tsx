@@ -7,14 +7,14 @@ const metrics = [
     description: 'Drove revenue growth by optimizing pricing models, increasing ASP, and launching high-value features that expanded market reach and accelerated ARR.'
   },
   {
-    value: '~95-100%',
+    value: '+95%',
     label: 'Retention & Engagement',
-    description: 'Improved retention and engagement by streamlining onboarding, enhancing user workflows, and increasing feature adoption to drive long-term customer loyalty.'
+    description: 'Consistently drive product iniatitives thaqt drive KPIs like 95-100% Gross Retention Rate by streamlining onboarding, enhancing user workflows, and driving feature adoption, ensuring long-term customer loyalty and sustained engagement.'
   },
   {
-    value: '110%',
-    label: 'Efficiency & Adoption',
-    description: 'Increased product efficiency and adoption by reducing time-to-value, improving UX, and minimizing support overhead through workflow automation and intuitive design.'
+    value: "110%+",
+    label: "Efficiency & Adoption",
+    description: "Continuously drive efficiency and adoption improvements by reducing time-to-value, enhancing UX, and minimizing support overhead, consistently achieving a 110%+ Net Retention Rate through expansion revenue and long-term customer engagement."
   }
 ];
 
@@ -28,7 +28,7 @@ export default function ImpactMetrics() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {metrics.map((metric, index) => (
             <div
-              key={index}
+             key={index}
               className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="text-4xl font-bold text-blue-600 mb-4">
