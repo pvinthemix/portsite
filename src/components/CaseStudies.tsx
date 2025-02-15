@@ -58,7 +58,7 @@ const caseStudies = [
   {
     title: 'Workspaces',
     company: 'SaaS Fintech Platform',
-    description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows. Designed and launched permission-controlled workspaces with pre-configured templates for fundraising, due diligence, and investor relations, enhancing investor transparency and operational efficiency.',
+    description: 'Recognized a market gap in private equity and venture capital for structured, secure collaboration spaces to replace fragmented document-sharing workflows.',
     impact: '30% increase in adoption',
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
@@ -74,7 +74,7 @@ const caseStudies = [
     company: 'LMS platform',
     description: 'Spearheaded the launch of Online Courses as a core feature, leveraging UX design and advanced frontend capabilities to enhance user engagement and drive a 25% increase in client acquisition.',
     impact: 'Client acquisition of 2 major enterprise clients',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80'
   },
   {
     title: "B2C to B2B Pivot & 3PL Solution",
