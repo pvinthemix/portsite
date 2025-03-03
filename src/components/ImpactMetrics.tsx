@@ -4,17 +4,17 @@ const metrics = [
   {
     value: '200%+',
     label: 'Revenue Growth & Expansion',
-    description: 'Relentlessly drive revenue growth by optimizing pricing models, increasing ASP, and launching high-value features, consistently achieving 200%+ ARR growth by expanding market reach and maximizing customer value.'
+    description: 'Drove revenue growth by optimizing pricing, increasing ASP, and launching high-value features—achieving 200%+ ARR growth through market expansion and maximizing customer value.'
   },
   {
     value: '95%+',
     label: 'Retention & Engagement',
-    description: 'Consistently drive product iniatitives that drive KPIs such as 95-100% Gross Retention Rates YoY by streamlining onboarding, enhancing user workflows, and driving feature adoption, ensuring long-term customer loyalty and sustained engagement.'
+    description: 'Led product initiatives to achieve 95-100% Gross Retention YoY by streamlining onboarding, enhancing user workflows, and increasing feature adoption, ensuring long-term customer loyalty and engagement.'
   },
   {
     value: '110%+',
     label: 'Efficiency & Adoption',
-    description: 'Continuously drive efficiency and adoption improvements by reducing time-to-value, enhancing UX, and minimizing support overhead, consistently achieving a 110%+ Net Retention Rate through expansion revenue and long-term customer engagement.'
+    description: 'Improved efficiency and adoption by reducing time-to-value, enhancing UX, and minimizing support overhead, achieving 110%+ Net Retention through expansion revenue and long-term customer engagement.'
   }
 ];
 
