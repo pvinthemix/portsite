@@ -97,10 +97,10 @@ const caseStudies = [
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
   {
-    title: 'AI-Powered Fundraising',
+    title: 'AI-Powered Fundraising and Investor Relations Modules',
     company: 'SaaS Fintech Platform',
     description: 'Leading development of AI-driven investor automation with multi-agent workflows for prospecting, outreach, and sentiment analysis.',
-    impact: '50% projected reduction in manual operation workflow',
+    impact: '40% projected reduction in manual operation workflow',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
   },
   {
