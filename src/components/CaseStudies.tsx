@@ -92,7 +92,6 @@ const caseStudiesDetails = {
       'Enabled platform compliance with emerging mobile age verification requirements',
       'Reduced legal and platform risk through automated regulatory gating in the mobile apps',
       'Established a reusable compliance framework for future regional regulations',
-      'Maintained a low friction experience for legitimate users while enforcing required controls'
     ],
     link: '',
     linkText: ''
@@ -101,14 +100,11 @@ const caseStudiesDetails = {
     context: 'Led product development for the RE2000 biometric workforce time clock, a next generation hardware device designed to improve reliability, authentication accuracy, and workforce clock in workflows. The initiative required coordination across hardware manufacturing, firmware, and SaaS platform integrations.',
     role: [
       'Defined product requirements and feature scope for the RE2000 hardware release',
-      'Partnered with manufacturing and engineering teams on device capabilities, firmware requirements, and platform compatibility',
-      'Led product decisions around biometric authentication, device management, and workforce clock in workflows',
+      'Partnered with offshore manufacturing and engineering teams on device capabilities, firmware requirements, and platform compatibility',
       'Coordinated cross functional delivery across hardware vendors, firmware teams, and the cloud platform'
     ],
     outcomes: [
-      'Delivered a next generation workforce time clock integrated with the uAttend platform',
-      'Improved biometric authentication reliability and workforce clock in accuracy',
-      'Enabled scalable device management and platform integration for workforce customers',
+      'Delivered a workforce time clock integrated with the uAttend platform',
       'Expanded the product platform with a modern hardware offering'
     ],
     link: '',
