@@ -35,21 +35,22 @@ const caseStudiesDetails = {
     link: 'https://www.prweb.com/releases/altvia-elevates-investor-engagement-and-strengthens-digital-brand-with-innovative-sharesecure-features-landing-pages-and-workspaces-302243994.html',
     linkText: 'Workspaces Blog Post'
   },
-  'AI-Powered Fundraising': {
-    context: 'Leading development of AI-driven investor automation leveraging multi-agent workflows for prospecting, outreach, and sentiment analysis. Partnering with engineering on LLM-driven automation using Claude.ai, GPT, and LangChain for dynamic workflow processing.',
+  'AI Powered Investor Relations Operations': {
+    context: 'Led product development of AI driven workflows for investor relations operations, enabling secure distribution of capital calls, K 1s, and investor reports. Focused on automating LP communications while improving permission control, engagement visibility, and operational efficiency across investor communications.',
     role: [
-      'Defined MVP for AI-driven investor automation',
-      'Structured beta program with enterprise clients',
-      'Partnered on LLM-driven automation implementation',
-      'Developed predictive analytics for investor engagement'
+      'Defined the MVP for AI enabled investor communications and secure LP document distribution',
+      'Partnered with engineering to implement LLM driven workflow automation using Claude, GPT, and LangChain',
+      'Designed automated workflows for capital calls, investor reporting, and fund communications',
+      'Developed engagement tracking to measure LP interaction with distributed materials'
     ],
     outcomes: [
-      '50% projected reduction in manual fundraising operations',
-      'Expected increase in LP retention and reinvestment rates',
-      'Positioning AI automation as core differentiator'
+      'Reduced manual investor communication and fundraising operations through automated workflows',
+      'Enabled secure, permission based distribution of sensitive fund documents across LPs and funds',
+      'Introduced engagement visibility into investor communications and document access',
+      'Positioned AI driven investor relations operations as a differentiated capability within the platform'
     ],
-    link: 'https://altvia.com/platform/',
-    linkText: 'AI-Powered Workflow Initiative'
+    link: 'https://altvia.com/ir-operations/',
+    linkText: 'IR Operations'
   },
   'Online Courses': {
     context: 'Spearheaded the development and launch of a comprehensive online learning platform, focusing on user experience and engagement metrics.',
@@ -97,10 +98,10 @@ const caseStudies = [
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'
   },
   {
-    title: 'AI-Powered Fundraising and Investor Relations Modules',
+    title: 'AI Powered Investor Relations Operations',
     company: 'SaaS Fintech Platform',
-    description: 'Leading development of AI-driven investor automation with multi-agent workflows for prospecting, outreach, and sentiment analysis.',
-    impact: '40% projected reduction in manual operation workflow',
+    description: 'Led product development of AI driven workflows for investor relations operations with secure LP communications and document distribution.',
+    impact: 'Automated investor communications with secure, permission based document distribution',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80'
   },
   {
