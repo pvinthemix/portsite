@@ -79,6 +79,40 @@ const caseStudiesDetails = {
     ],
     link: 'https://sg.finance.yahoo.com/news/shyp-seamless-outsourced-fulfillment-shopify-130000140.html',
     linkText: 'B2B Pivot Success Story'
+  },
+  'Mobile Age Verification Compliance': {
+    context: 'Led product development for mobile age verification across iOS and Android to meet new app store regulatory requirements. Designed a cross platform compliance framework using Apple and Google age signal APIs to enforce regulatory rules while minimizing disruption to existing users.',
+    role: [
+      'Defined product requirements and business rules for age verification workflows across iOS and Android',
+      'Partnered with engineering to integrate Apple Declared Age Range APIs and Google Age Signals',
+      'Designed approval, rejection, and parental consent flows based on regulatory requirements',
+      'Structured a scalable framework to support jurisdiction specific compliance rules in the future'
+    ],
+    outcomes: [
+      'Enabled platform compliance with emerging mobile age verification requirements',
+      'Reduced legal and platform risk through automated regulatory gating in the mobile apps',
+      'Established a reusable compliance framework for future regional regulations',
+      'Maintained a low friction experience for legitimate users while enforcing required controls'
+    ],
+    link: '',
+    linkText: ''
+  },
+  'RE2000 Hardware Platform Launch': {
+    context: 'Led product development for the RE2000 biometric workforce time clock, a next generation hardware device designed to improve reliability, authentication accuracy, and workforce clock in workflows. The initiative required coordination across hardware manufacturing, firmware, and SaaS platform integrations.',
+    role: [
+      'Defined product requirements and feature scope for the RE2000 hardware release',
+      'Partnered with manufacturing and engineering teams on device capabilities, firmware requirements, and platform compatibility',
+      'Led product decisions around biometric authentication, device management, and workforce clock in workflows',
+      'Coordinated cross functional delivery across hardware vendors, firmware teams, and the cloud platform'
+    ],
+    outcomes: [
+      'Delivered a next generation workforce time clock integrated with the uAttend platform',
+      'Improved biometric authentication reliability and workforce clock in accuracy',
+      'Enabled scalable device management and platform integration for workforce customers',
+      'Expanded the product platform with a modern hardware offering'
+    ],
+    link: '',
+    linkText: ''
   }
 };
 
@@ -119,6 +153,22 @@ const caseStudies = [
     impact: "Successful market transition and increased B2B adoption",
     image:
       "https://images.unsplash.com/photo-1586880244406-556ebe35f282?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: 'Mobile Age Verification Compliance',
+    company: 'Mobile Platform Compliance',
+    description: 'Led cross platform age verification workflows across iOS and Android to enforce app store regulatory requirements with minimal user disruption.',
+    impact: 'Enabled compliant mobile age gating with low-friction user experience',
+    image: 'https://images.unsplash.com/vector-1761385079498-69fa4adce7dc?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Smartphone fingerprint security image'
+  },
+  {
+    title: 'RE2000 Hardware Platform Launch',
+    company: 'Biometric Workforce Platform',
+    description: 'Led product development for the RE2000 biometric time clock across hardware, firmware, and SaaS integrations to modernize workforce clock in workflows.',
+    impact: 'Delivered next-generation biometric hardware integrated with the uAttend platform',
+    image: 'https://images.unsplash.com/vector-1761645174671-7f6468282430?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Modern access control hardware terminal'
   }
 ];
 
@@ -153,7 +203,7 @@ export default function CaseStudies() {
               <div className="aspect-video relative overflow-hidden">
                 <img
                   src={study.image}
-                  alt={study.title}
+                  alt={study.alt ?? study.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
