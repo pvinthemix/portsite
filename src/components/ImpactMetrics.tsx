@@ -3,18 +3,18 @@ import React from 'react';
 const metrics = [
   {
     value: '200%+',
-    label: 'Revenue Growth & Expansion',
-    description: 'Drove revenue growth by optimizing pricing, increasing ASP, and launching high-value features—achieving 200%+ ARR growth through market expansion and maximizing customer value.'
+    label: 'ARR Growth',
+    description: 'Helped drive over 200% ARR growth by leading product initiatives that expanded platform capabilities, improved investor facing workflows, and increased the commercial impact of the products I supported.'
   },
   {
-    value: '95%+',
-    label: 'Retention & Engagement',
-    description: 'Led product initiatives to achieve 95-100% Gross Retention YoY by streamlining onboarding, enhancing user workflows, and increasing feature adoption, ensuring long-term customer loyalty and engagement.'
+    value: 'AI',
+    label: 'AI Product Development',
+    description: 'Fluent in modern AI technologies including LLMs, agent based workflows, and prompt driven systems, applying tools such as Claude, GPT, and LangChain to design AI powered automation for investor research, prospecting, and outreach operations.'
   },
   {
-    value: '110%+',
-    label: 'Efficiency & Adoption',
-    description: 'Improved efficiency and adoption by reducing time-to-value, enhancing UX, and minimizing support overhead, achieving 110%+ Net Retention through expansion revenue and long-term customer engagement.'
+    value: 'Platform',
+    label: 'Platform Innovation',
+    description: 'Led development of new platform capabilities including customizable landing pages and investor engagement tools that improved usability, differentiated the platform, and increased product value for customers.'
   }
 ];
 
