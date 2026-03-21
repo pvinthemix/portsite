@@ -3,6 +3,32 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
+  'ShelfTalk': {
+    modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
+    context: <>Most PMs talk about <span className="font-semibold text-gray-900">AI</span> — this project proves I can build with it. ShelfTalk turns a book cover photo into a full podcast episode, end-to-end, zero manual production. Inspired by <span className="font-semibold text-gray-900">NotebookLM</span>, built to develop real fluency with the <span className="font-semibold text-gray-900">AI toolchain</span>.</>,
+    role: [
+      <>Architected a multi-model pipeline on <span className="font-semibold text-gray-900">Google Cloud</span> using the <span className="font-semibold text-gray-900">Gemini API</span> for <span className="font-semibold text-gray-900">vision</span>, <span className="font-semibold text-gray-900">LLM generation</span>, and <span className="font-semibold text-gray-900">TTS</span></>,
+      <>Built a podcast host engine with 5 AI personas, mood injection, and <span className="font-semibold text-gray-900">advanced prompt engineering</span></>,
+      <>Designed monetization via <span className="font-semibold text-gray-900">Stripe</span> and <span className="font-semibold text-gray-900">Vercel Feature Flags</span> with device-based free tier tracking</>
+    ],
+    agentic: [
+      <><span className="font-semibold text-gray-900">Source Agent</span> — evaluates and scores fetched content for relevance, depth, and copyright compliance</>,
+      <><span className="font-semibold text-gray-900">Script Agent</span> — generates, validates, and self-refines podcast scripts in an autonomous loop</>,
+      <><span className="font-semibold text-gray-900">Audio Agent</span> — measures real audio duration, detects silent gaps, and corrects output quality</>
+    ],
+    build: [
+      <>Developed end-to-end using <span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">OpenAI Codex</span> as AI-assisted development tools</>,
+      <>Integrated <span className="font-semibold text-gray-900">Google Books API</span> and <span className="font-semibold text-gray-900">Open Library API</span> for book resolution and source discovery</>,
+      <>Shipped on <span className="font-semibold text-gray-900">Next.js</span>, <span className="font-semibold text-gray-900">Supabase</span>, and <span className="font-semibold text-gray-900">Vercel</span></>
+    ],
+    outcomes: [
+      <>AI product from idea to deployed, monetization-ready application with <span className="font-semibold text-gray-900">autonomous quality control</span></>,
+      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">agentic workflows</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted dev</span></>,
+      <>A PM who sits at the intersection of product and engineering — and ships</>
+    ],
+    link: 'https://shelftalk-nu.vercel.app/',
+    linkText: 'ShelfTalk Live Product'
+  },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
     role: [
@@ -113,6 +139,14 @@ const caseStudiesDetails = {
 };
 
 const caseStudies = [
+  {
+    title: 'ShelfTalk',
+    company: 'AI Product Development',
+    description: <>Book cover to podcast — built on the <span className="font-semibold text-gray-900">Gemini API</span> with <span className="font-semibold text-gray-900">AI agents</span>, <span className="font-semibold text-gray-900">Claude Code</span>, and <span className="font-semibold text-gray-900">Codex</span>. A PM who ships.</>,
+    impact: 'Agentic AI pipeline from image to audio',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
+    alt: 'Open book with audio and AI concept'
+  },
   {
     title: 'Landing Pages',
     company: 'SaaS Fintech Platform',
@@ -226,7 +260,9 @@ export default function CaseStudies() {
         {selectedStudy && selectedDetails && (
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedStudy}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                {'modalTitle' in selectedDetails ? selectedDetails.modalTitle : selectedStudy}
+              </h3>
               {selectedDetails.link && (
                 <a
                   href={selectedDetails.link}
@@ -251,6 +287,26 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'agentic' in selectedDetails && Array.isArray(selectedDetails.agentic) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">Agentic Architecture</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.agentic.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.build.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
