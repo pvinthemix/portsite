@@ -5,19 +5,19 @@ import Modal from './Modal';
 const caseStudiesDetails = {
   'ShelfTalk': {
     modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
-    context: <>Most PMs talk about <strong>AI</strong> — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by <strong>NotebookLM&apos;s</strong> audio format, built entirely as a personal project to develop deep, practical fluency with the <strong>AI toolchain</strong>.</>,
+    context: "Most PMs talk about AI — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by NotebookLM's audio format, built entirely as a personal project to develop deep, practical fluency with the AI toolchain.",
     role: [
-      <>Defined the product vision and architected a multi-model pipeline on <strong>Google Cloud</strong> using the <strong>Gemini API</strong> for <strong>computer vision</strong>, <strong>LLM script generation</strong>, and <strong>neural TTS</strong> — with <strong>ElevenLabs</strong> as a fallback provider</>,
-      <>Designed a podcast host engine with <strong>5 distinct AI personas</strong>, randomized mood and tone injection, and <strong>advanced prompt engineering</strong> that produces natural, varied episodes across multiple formats</>,
-      <>Built a monetization model using <strong>Stripe</strong> payments and <strong>Vercel Feature Flags</strong> to gate premium episode formats with device-based free tier tracking</>
+      'Defined the product vision and architected a multi-model pipeline on Google Cloud using the Gemini API for computer vision, LLM script generation, and neural TTS — with ElevenLabs as a fallback provider',
+      'Designed a podcast host engine with 5 distinct AI personas, randomized mood and tone injection, and advanced prompt engineering that produces natural, varied episodes across multiple formats',
+      'Built a monetization model using Stripe payments and Vercel Feature Flags to gate premium episode formats with device-based free tier tracking'
     ],
     build: [
-      <>Developed end-to-end using <strong>Claude Code</strong> and <strong>OpenAI Codex</strong>, integrated <strong>Google Books API</strong> and <strong>Open Library API</strong> for book resolution, shipped on <strong>Next.js</strong>, <strong>Supabase</strong>, and <strong>Vercel</strong></>
+      'Developed end-to-end using Claude Code and OpenAI Codex, integrated Google Books API and Open Library API for book resolution, shipped on Next.js, Supabase, and Vercel'
     ],
     outcomes: [
-      <>Took an <strong>AI product</strong> from <strong>napkin sketch</strong> to deployed, monetization-ready application — strategy, architecture, build, and launch</>,
-      <>Working fluency across <strong>Google Cloud AI services</strong>, <strong>multi-model orchestration</strong>, <strong>prompt engineering</strong>, <strong>AI-assisted development</strong>, and <strong>feature flag driven releases</strong></>,
-      <>Proof that I can sit at the intersection of <strong>product</strong> and <strong>engineering</strong> — and ship</>
+      'Took an AI product from napkin sketch to deployed, monetization-ready application — strategy, architecture, build, and launch',
+      'Working fluency across Google Cloud AI services, multi-model orchestration, prompt engineering, AI-assisted development, and feature flag driven releases',
+      'Proof that I can sit at the intersection of product and engineering — and ship'
     ],
     link: 'https://shelftalk-nu.vercel.app/',
     linkText: 'ShelfTalk Live Product'
