@@ -3,20 +3,24 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
-  'ShelfTalk — AI Book-to-Podcast Platform': {
-    context: 'I built ShelfTalk from scratch as a personal project to develop real, hands-on fluency with the AI tools reshaping product development. ShelfTalk takes a photo of any book cover and produces a full podcast-style audio episode with no manual content creation. The entire pipeline is AI-driven, from identifying the book through computer vision to generating a scripted episode and synthesizing natural-sounding audio.',
+  'ShelfTalk': {
+    modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
+    context: "Most PMs talk about AI — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by NotebookLM's audio format, built entirely as a personal project to develop deep, practical fluency with the AI toolchain.",
     role: [
-      'I architected and built a multi-model AI pipeline orchestrating Google Gemini across three distinct capabilities: computer vision for book identification, LLM-powered script generation with advanced prompt engineering, and neural text-to-speech for audio production',
-      'I developed robust prompt engineering strategies including dynamic host persona injection, mood randomization, and format-specific templates that produce natural, non-repetitive podcast scripts at scale',
-      'I designed fallback architecture across AI providers and a 5-tier source classification system to solve production concerns around reliability, copyright compliance, and content quality'
+      'Defined the product vision and architected a multi-model pipeline on Google Cloud using the Gemini API for computer vision, LLM script generation, and neural TTS — with ElevenLabs as a fallback provider',
+      'Designed a podcast host engine with 5 distinct AI personas, randomized mood and tone injection, and advanced prompt engineering that produces natural, varied episodes across multiple formats',
+      'Built a monetization model using Stripe payments and Vercel Feature Flags to gate premium episode formats with device-based free tier tracking'
+    ],
+    build: [
+      'Developed end-to-end using Claude Code and OpenAI Codex, integrated Google Books API and Open Library API for book resolution, shipped on Next.js, Supabase, and Vercel'
     ],
     outcomes: [
-      'I shipped a complete AI product end-to-end from problem definition through architecture, development, and deployment (Next.js, Supabase, Stripe, Vercel), demonstrating my ability to take an AI concept from zero to production',
-      'I developed practical, transferable expertise in multi-model orchestration, prompt engineering, AI provider evaluation, and building reliable systems around non-deterministic AI outputs',
-      'This project demonstrates build-level AI product fluency for hiring managers: I understand the tradeoffs, failure modes, and design patterns involved in shipping AI-powered features, not just presenting strategy'
+      'Took an AI product from napkin sketch to deployed, monetization-ready application — strategy, architecture, build, and launch',
+      'Working fluency across Google Cloud AI services, multi-model orchestration, prompt engineering, AI-assisted development, and feature flag driven releases',
+      'Proof that I can sit at the intersection of product and engineering — and ship'
     ],
-    link: '',
-    linkText: ''
+    link: 'https://shelftalk-nu.vercel.app/',
+    linkText: 'ShelfTalk Live Product'
   },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
@@ -129,10 +133,10 @@ const caseStudiesDetails = {
 
 const caseStudies = [
   {
-    title: 'ShelfTalk — AI Book-to-Podcast Platform',
+    title: 'ShelfTalk',
     company: 'AI Product Development',
-    description: 'I built a full AI product from scratch: snap a book cover and get a podcast episode, powered by Gemini vision, LLM scripting, and neural TTS. It reflects hands-on AI fluency from concept to production.',
-    impact: 'End-to-end AI pipeline from image capture to generated audio',
+    description: 'Snap a book cover, get a podcast — built on the Gemini API with Claude Code and Codex. AI host engine, Stripe monetization, Vercel feature flags. A PM who ships.',
+    impact: 'AI pipeline from image to audio',
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
     alt: 'Open book with audio and AI concept'
   },
@@ -249,7 +253,9 @@ export default function CaseStudies() {
         {selectedStudy && selectedDetails && (
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedStudy}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                {'modalTitle' in selectedDetails ? selectedDetails.modalTitle : selectedStudy}
+              </h3>
               {selectedDetails.link && (
                 <a
                   href={selectedDetails.link}
