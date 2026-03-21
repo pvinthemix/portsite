@@ -7,16 +7,18 @@ const caseStudiesDetails = {
     modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
     context: <>Most PMs talk about <span className="font-semibold text-gray-900">AI</span> — this project proves I can build with it. ShelfTalk turns a book cover photo into a full podcast episode, end-to-end, zero manual production. Inspired by <span className="font-semibold text-gray-900">NotebookLM</span>, built to develop real fluency with the <span className="font-semibold text-gray-900">AI toolchain</span>.</>,
     role: [
-      <>Architected a multi-model pipeline on <span className="font-semibold text-gray-900">Google Cloud</span> using the <span className="font-semibold text-gray-900">Gemini API</span> for <span className="font-semibold text-gray-900">computer vision</span>, <span className="font-semibold text-gray-900">LLM script generation</span>, and <span className="font-semibold text-gray-900">neural TTS</span> with <span className="font-semibold text-gray-900">ElevenLabs</span> fallback</>,
-      <>Built a podcast host engine with 5 AI personas, mood injection, and <span className="font-semibold text-gray-900">advanced prompt engineering</span> for natural, varied output</>,
-      <>Monetization via <span className="font-semibold text-gray-900">Stripe</span> and <span className="font-semibold text-gray-900">Vercel Feature Flags</span> gating premium formats with device-based free tier tracking</>
+      <>Architected a multi-model pipeline on <span className="font-semibold text-gray-900">Google Cloud</span> using the <span className="font-semibold text-gray-900">Gemini API</span> for <span className="font-semibold text-gray-900">vision</span>, <span className="font-semibold text-gray-900">LLM generation</span>, and <span className="font-semibold text-gray-900">TTS</span></>,
+      <>Built a podcast host engine with 5 AI personas, mood injection, and <span className="font-semibold text-gray-900">advanced prompt engineering</span></>,
+      <>Designed monetization via <span className="font-semibold text-gray-900">Stripe</span> and <span className="font-semibold text-gray-900">Vercel Feature Flags</span> with device-based free tier tracking</>
     ],
     build: [
-      <><span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">OpenAI Codex</span> for development, <span className="font-semibold text-gray-900">Google Books</span> and <span className="font-semibold text-gray-900">Open Library APIs</span> for book resolution, shipped on <span className="font-semibold text-gray-900">Next.js</span>, <span className="font-semibold text-gray-900">Supabase</span>, and <span className="font-semibold text-gray-900">Vercel</span></>
+      <>Developed end-to-end using <span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">OpenAI Codex</span> as AI-assisted development tools</>,
+      <>Integrated <span className="font-semibold text-gray-900">Google Books API</span> and <span className="font-semibold text-gray-900">Open Library API</span> for book resolution and source discovery</>,
+      <>Shipped on <span className="font-semibold text-gray-900">Next.js</span>, <span className="font-semibold text-gray-900">Supabase</span>, and <span className="font-semibold text-gray-900">Vercel</span></>
     ],
     outcomes: [
-      <>AI product from idea to deployed, monetization-ready app — strategy, architecture, build, and launch</>,
-      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">multi-model orchestration</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted development</span></>,
+      <>AI product from idea to deployed, monetization-ready application</>,
+      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">multi-model orchestration</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted dev</span></>,
       <>A PM who sits at the intersection of product and engineering — and ships</>
     ],
     link: 'https://shelftalk-nu.vercel.app/',
