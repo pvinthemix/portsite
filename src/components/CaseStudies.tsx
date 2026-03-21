@@ -3,6 +3,25 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
+  'ShelfTalk': {
+    modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
+    context: <>Most PMs talk about <strong>AI</strong> — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by <strong>NotebookLM&apos;s</strong> audio format, built entirely as a personal project to develop deep, practical fluency with the <strong>AI toolchain</strong>.</>,
+    role: [
+      <>Defined the product vision and architected a multi-model pipeline on <strong>Google Cloud</strong> using the <strong>Gemini API</strong> for <strong>computer vision</strong>, <strong>LLM script generation</strong>, and <strong>neural TTS</strong> — with <strong>ElevenLabs</strong> as a fallback provider</>,
+      <>Designed a podcast host engine with <strong>5 distinct AI personas</strong>, randomized mood and tone injection, and <strong>advanced prompt engineering</strong> that produces natural, varied episodes across multiple formats</>,
+      <>Built a monetization model using <strong>Stripe</strong> payments and <strong>Vercel Feature Flags</strong> to gate premium episode formats with device-based free tier tracking</>
+    ],
+    build: [
+      <>Developed end-to-end using <strong>Claude Code</strong> and <strong>OpenAI Codex</strong>, integrated <strong>Google Books API</strong> and <strong>Open Library API</strong> for book resolution, shipped on <strong>Next.js</strong>, <strong>Supabase</strong>, and <strong>Vercel</strong></>
+    ],
+    outcomes: [
+      <>Took an <strong>AI product</strong> from <strong>napkin sketch</strong> to deployed, monetization-ready application — strategy, architecture, build, and launch</>,
+      <>Working fluency across <strong>Google Cloud AI services</strong>, <strong>multi-model orchestration</strong>, <strong>prompt engineering</strong>, <strong>AI-assisted development</strong>, and <strong>feature flag driven releases</strong></>,
+      <>Proof that I can sit at the intersection of <strong>product</strong> and <strong>engineering</strong> — and ship</>
+    ],
+    link: 'https://shelftalk-nu.vercel.app/',
+    linkText: 'ShelfTalk Live Product'
+  },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
     role: [
@@ -113,6 +132,14 @@ const caseStudiesDetails = {
 };
 
 const caseStudies = [
+  {
+    title: 'ShelfTalk',
+    company: 'AI Product Development',
+    description: <>Snap a book cover, get a podcast — built on the <strong>Gemini API</strong> with <strong>Claude Code</strong> and <strong>Codex</strong>. AI host engine, <strong>Stripe</strong> monetization, <strong>Vercel feature flags</strong>. A PM who ships.</>,
+    impact: 'AI pipeline from image to audio',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
+    alt: 'Open book with audio and AI concept'
+  },
   {
     title: 'Landing Pages',
     company: 'SaaS Fintech Platform',
@@ -226,7 +253,9 @@ export default function CaseStudies() {
         {selectedStudy && selectedDetails && (
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedStudy}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                {'modalTitle' in selectedDetails ? selectedDetails.modalTitle : selectedStudy}
+              </h3>
               {selectedDetails.link && (
                 <a
                   href={selectedDetails.link}
@@ -251,6 +280,16 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.build.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
