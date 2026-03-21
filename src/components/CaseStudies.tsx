@@ -135,7 +135,7 @@ const caseStudies = [
   {
     title: 'ShelfTalk',
     company: 'AI Product Development',
-    description: 'Snap a book cover, get a podcast — built on the Gemini API with Claude Code and Codex. AI host engine, Stripe monetization, Vercel feature flags. A PM who ships.',
+    description: <>Snap a book cover, get a podcast — built on the <strong>Gemini API</strong> with <strong>Claude Code</strong> and <strong>Codex</strong>. AI host engine, <strong>Stripe</strong> monetization, <strong>Vercel feature flags</strong>. A PM who ships.</>,
     impact: 'AI pipeline from image to audio',
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
     alt: 'Open book with audio and AI concept'
