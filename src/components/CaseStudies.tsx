@@ -3,6 +3,26 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
+  'ShelfTalk — AI Book-to-Podcast Platform': {
+    context: "Personal project built to develop hands-on fluency with the AI stack reshaping product development. Snap a photo of any book cover and ShelfTalk produces a full podcast episode — inspired by NotebookLM's audio format, entirely AI-driven.",
+    role: [
+      'Architected a multi-model pipeline on Google Cloud using the Gemini API for computer vision, LLM script generation, and neural TTS with ElevenLabs fallback',
+      'Built a podcast host engine with 5 AI personas, randomized mood injection, and advanced prompt engineering to produce natural, non-repetitive episodes across multiple formats',
+      'Designed monetization using Stripe and Vercel Feature Flags to gate premium formats behind a paywall with device-based free tier tracking'
+    ],
+    build: [
+      'Developed end-to-end using Claude Code and OpenAI Codex',
+      'Integrated Google Books API and Open Library API for book resolution',
+      'Shipped on Next.js, Supabase, and Vercel'
+    ],
+    outcomes: [
+      'Full AI product from zero to production with a clear path to revenue',
+      'Fluency across Google Cloud AI services, multi-model orchestration, prompt engineering, AI-assisted development, and feature flag monetization',
+      'A PM who can own the full lifecycle — strategy, architecture, build, and go-to-market'
+    ],
+    link: 'https://shelftalk-nu.vercel.app/',
+    linkText: 'ShelfTalk Live Product'
+  },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
     role: [
@@ -113,6 +133,14 @@ const caseStudiesDetails = {
 };
 
 const caseStudies = [
+  {
+    title: 'ShelfTalk — AI Book-to-Podcast Platform',
+    company: 'AI Product Development',
+    description: 'Snap a book cover, get a podcast — built on Google Cloud and Gemini API with Claude Code and Codex. AI host engine, Stripe monetization, and Vercel feature flags. A PM who builds.',
+    impact: 'AI pipeline from image to audio',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
+    alt: 'Open book with audio and AI concept'
+  },
   {
     title: 'Landing Pages',
     company: 'SaaS Fintech Platform',
@@ -251,6 +279,16 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.build.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
