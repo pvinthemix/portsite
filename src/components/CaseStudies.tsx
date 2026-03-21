@@ -11,14 +11,19 @@ const caseStudiesDetails = {
       <>Built a podcast host engine with 5 AI personas, mood injection, and <span className="font-semibold text-gray-900">advanced prompt engineering</span></>,
       <>Designed monetization via <span className="font-semibold text-gray-900">Stripe</span> and <span className="font-semibold text-gray-900">Vercel Feature Flags</span> with device-based free tier tracking</>
     ],
+    agentic: [
+      <><span className="font-semibold text-gray-900">Source Agent</span> — evaluates and scores fetched content for relevance, depth, and copyright compliance</>,
+      <><span className="font-semibold text-gray-900">Script Agent</span> — generates, validates, and self-refines podcast scripts in an autonomous loop</>,
+      <><span className="font-semibold text-gray-900">Audio Agent</span> — measures real audio duration, detects silent gaps, and corrects output quality</>
+    ],
     build: [
       <>Developed end-to-end using <span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">OpenAI Codex</span> as AI-assisted development tools</>,
       <>Integrated <span className="font-semibold text-gray-900">Google Books API</span> and <span className="font-semibold text-gray-900">Open Library API</span> for book resolution and source discovery</>,
       <>Shipped on <span className="font-semibold text-gray-900">Next.js</span>, <span className="font-semibold text-gray-900">Supabase</span>, and <span className="font-semibold text-gray-900">Vercel</span></>
     ],
     outcomes: [
-      <>AI product from idea to deployed, monetization-ready application</>,
-      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">multi-model orchestration</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted dev</span></>,
+      <>AI product from idea to deployed, monetization-ready application with <span className="font-semibold text-gray-900">autonomous quality control</span></>,
+      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">agentic workflows</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted dev</span></>,
       <>A PM who sits at the intersection of product and engineering — and ships</>
     ],
     link: 'https://shelftalk-nu.vercel.app/',
@@ -137,8 +142,8 @@ const caseStudies = [
   {
     title: 'ShelfTalk',
     company: 'AI Product Development',
-    description: <>Book cover photo to podcast episode — built on the <span className="font-semibold text-gray-900">Gemini API</span> with <span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">Codex</span>. A PM who ships.</>,
-    impact: 'End-to-end AI pipeline from image to audio',
+    description: <>Book cover to podcast — built on the <span className="font-semibold text-gray-900">Gemini API</span> with <span className="font-semibold text-gray-900">AI agents</span>, <span className="font-semibold text-gray-900">Claude Code</span>, and <span className="font-semibold text-gray-900">Codex</span>. A PM who ships.</>,
+    impact: 'Agentic AI pipeline from image to audio',
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
     alt: 'Open book with audio and AI concept'
   },
@@ -282,6 +287,16 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'agentic' in selectedDetails && Array.isArray(selectedDetails.agentic) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">Agentic Architecture</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.agentic.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
