@@ -274,6 +274,16 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.build.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
