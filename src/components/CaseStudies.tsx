@@ -3,6 +3,25 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
+  'ShelfTalk': {
+    modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
+    context: "Most PMs talk about AI — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by NotebookLM's audio format, built entirely as a personal project to develop deep, practical fluency with the AI toolchain.",
+    role: [
+      'Defined the product vision and architected a multi-model pipeline on Google Cloud using the Gemini API for computer vision, LLM script generation, and neural TTS — with ElevenLabs as a fallback provider',
+      'Designed a podcast host engine with 5 distinct AI personas, randomized mood and tone injection, and advanced prompt engineering that produces natural, varied episodes across multiple formats',
+      'Built a monetization model using Stripe payments and Vercel Feature Flags to gate premium episode formats with device-based free tier tracking'
+    ],
+    build: [
+      'Developed end-to-end using Claude Code and OpenAI Codex, integrated Google Books API and Open Library API for book resolution, shipped on Next.js, Supabase, and Vercel'
+    ],
+    outcomes: [
+      'Took an AI product from napkin sketch to deployed, monetization-ready application — strategy, architecture, build, and launch',
+      'Working fluency across Google Cloud AI services, multi-model orchestration, prompt engineering, AI-assisted development, and feature flag driven releases',
+      'Proof that I can sit at the intersection of product and engineering — and ship'
+    ],
+    link: 'https://shelftalk-nu.vercel.app/',
+    linkText: 'ShelfTalk Live Product'
+  },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
     role: [
@@ -113,6 +132,14 @@ const caseStudiesDetails = {
 };
 
 const caseStudies = [
+  {
+    title: 'ShelfTalk',
+    company: 'AI Product Development',
+    description: 'Snap a book cover, get a podcast — built on the Gemini API with Claude Code and Codex. AI host engine, Stripe monetization, Vercel feature flags. A PM who ships.',
+    impact: 'AI pipeline from image to audio',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
+    alt: 'Open book with audio and AI concept'
+  },
   {
     title: 'Landing Pages',
     company: 'SaaS Fintech Platform',
@@ -226,7 +253,9 @@ export default function CaseStudies() {
         {selectedStudy && selectedDetails && (
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedStudy}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                {'modalTitle' in selectedDetails ? selectedDetails.modalTitle : selectedStudy}
+              </h3>
               {selectedDetails.link && (
                 <a
                   href={selectedDetails.link}
@@ -251,6 +280,16 @@ export default function CaseStudies() {
                 ))}
               </ul>
             </div>
+            {'build' in selectedDetails && Array.isArray(selectedDetails.build) && (
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-3">How It Was Built</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  {selectedDetails.build.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Impact & Results</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
