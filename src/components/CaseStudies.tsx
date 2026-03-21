@@ -5,19 +5,19 @@ import Modal from './Modal';
 const caseStudiesDetails = {
   'ShelfTalk': {
     modalTitle: 'ShelfTalk — AI Book-to-Podcast Platform',
-    context: "Most PMs talk about AI — this project proves I can build with it. ShelfTalk turns a photo of any book cover into a full podcast episode, end-to-end, with no manual content production. Inspired by NotebookLM's audio format, built entirely as a personal project to develop deep, practical fluency with the AI toolchain.",
+    context: <>Most PMs talk about <span className="font-semibold text-gray-900">AI</span> — this project proves I can build with it. ShelfTalk turns a book cover photo into a full podcast episode, end-to-end, zero manual production. Inspired by <span className="font-semibold text-gray-900">NotebookLM</span>, built to develop real fluency with the <span className="font-semibold text-gray-900">AI toolchain</span>.</>,
     role: [
-      'Defined the product vision and architected a multi-model pipeline on Google Cloud using the Gemini API for computer vision, LLM script generation, and neural TTS — with ElevenLabs as a fallback provider',
-      'Designed a podcast host engine with 5 distinct AI personas, randomized mood and tone injection, and advanced prompt engineering that produces natural, varied episodes across multiple formats',
-      'Built a monetization model using Stripe payments and Vercel Feature Flags to gate premium episode formats with device-based free tier tracking'
+      <>Architected a multi-model pipeline on <span className="font-semibold text-gray-900">Google Cloud</span> using the <span className="font-semibold text-gray-900">Gemini API</span> for <span className="font-semibold text-gray-900">computer vision</span>, <span className="font-semibold text-gray-900">LLM script generation</span>, and <span className="font-semibold text-gray-900">neural TTS</span> with <span className="font-semibold text-gray-900">ElevenLabs</span> fallback</>,
+      <>Built a podcast host engine with 5 AI personas, mood injection, and <span className="font-semibold text-gray-900">advanced prompt engineering</span> for natural, varied output</>,
+      <>Monetization via <span className="font-semibold text-gray-900">Stripe</span> and <span className="font-semibold text-gray-900">Vercel Feature Flags</span> gating premium formats with device-based free tier tracking</>
     ],
     build: [
-      'Developed end-to-end using Claude Code and OpenAI Codex, integrated Google Books API and Open Library API for book resolution, shipped on Next.js, Supabase, and Vercel'
+      <><span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">OpenAI Codex</span> for development, <span className="font-semibold text-gray-900">Google Books</span> and <span className="font-semibold text-gray-900">Open Library APIs</span> for book resolution, shipped on <span className="font-semibold text-gray-900">Next.js</span>, <span className="font-semibold text-gray-900">Supabase</span>, and <span className="font-semibold text-gray-900">Vercel</span></>
     ],
     outcomes: [
-      'Took an AI product from napkin sketch to deployed, monetization-ready application — strategy, architecture, build, and launch',
-      'Working fluency across Google Cloud AI services, multi-model orchestration, prompt engineering, AI-assisted development, and feature flag driven releases',
-      'Proof that I can sit at the intersection of product and engineering — and ship'
+      <>AI product from idea to deployed, monetization-ready app — strategy, architecture, build, and launch</>,
+      <>Fluency across <span className="font-semibold text-gray-900">Google Cloud AI</span>, <span className="font-semibold text-gray-900">multi-model orchestration</span>, <span className="font-semibold text-gray-900">prompt engineering</span>, and <span className="font-semibold text-gray-900">AI-assisted development</span></>,
+      <>A PM who sits at the intersection of product and engineering — and ships</>
     ],
     link: 'https://shelftalk-nu.vercel.app/',
     linkText: 'ShelfTalk Live Product'
@@ -135,8 +135,8 @@ const caseStudies = [
   {
     title: 'ShelfTalk',
     company: 'AI Product Development',
-    description: <>Snap a book cover, get a podcast — built on the <strong>Gemini API</strong> with <strong>Claude Code</strong> and <strong>Codex</strong>. AI host engine, <strong>Stripe</strong> monetization, <strong>Vercel feature flags</strong>. A PM who ships.</>,
-    impact: 'AI pipeline from image to audio',
+    description: <>Book cover photo to podcast episode — built on the <span className="font-semibold text-gray-900">Gemini API</span> with <span className="font-semibold text-gray-900">Claude Code</span> and <span className="font-semibold text-gray-900">Codex</span>. A PM who ships.</>,
+    impact: 'End-to-end AI pipeline from image to audio',
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
     alt: 'Open book with audio and AI concept'
   },
