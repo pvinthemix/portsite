@@ -3,6 +3,21 @@ import { ArrowUpRight } from 'lucide-react';
 import Modal from './Modal';
 
 const caseStudiesDetails = {
+  'ShelfTalk — AI Book-to-Podcast Platform': {
+    context: 'I built ShelfTalk from scratch as a personal project to develop real, hands-on fluency with the AI tools reshaping product development. ShelfTalk takes a photo of any book cover and produces a full podcast-style audio episode with no manual content creation. The entire pipeline is AI-driven, from identifying the book through computer vision to generating a scripted episode and synthesizing natural-sounding audio.',
+    role: [
+      'I architected and built a multi-model AI pipeline orchestrating Google Gemini across three distinct capabilities: computer vision for book identification, LLM-powered script generation with advanced prompt engineering, and neural text-to-speech for audio production',
+      'I developed robust prompt engineering strategies including dynamic host persona injection, mood randomization, and format-specific templates that produce natural, non-repetitive podcast scripts at scale',
+      'I designed fallback architecture across AI providers and a 5-tier source classification system to solve production concerns around reliability, copyright compliance, and content quality'
+    ],
+    outcomes: [
+      'I shipped a complete AI product end-to-end from problem definition through architecture, development, and deployment (Next.js, Supabase, Stripe, Vercel), demonstrating my ability to take an AI concept from zero to production',
+      'I developed practical, transferable expertise in multi-model orchestration, prompt engineering, AI provider evaluation, and building reliable systems around non-deterministic AI outputs',
+      'This project demonstrates build-level AI product fluency for hiring managers: I understand the tradeoffs, failure modes, and design patterns involved in shipping AI-powered features, not just presenting strategy'
+    ],
+    link: '',
+    linkText: ''
+  },
   'Landing Pages': {
     context: 'Led research and market validation with Investor Relations & Fundraising teams to identify gaps in investor onboarding and engagement. Defined and delivered MVP for customized, branded investor portals with embedded fund materials, reporting dashboards, and targeted communications.',
     role: [
@@ -113,6 +128,14 @@ const caseStudiesDetails = {
 };
 
 const caseStudies = [
+  {
+    title: 'ShelfTalk — AI Book-to-Podcast Platform',
+    company: 'AI Product Development',
+    description: 'I built a full AI product from scratch: snap a book cover and get a podcast episode, powered by Gemini vision, LLM scripting, and neural TTS. It reflects hands-on AI fluency from concept to production.',
+    impact: 'End-to-end AI pipeline from image capture to generated audio',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
+    alt: 'Open book with audio and AI concept'
+  },
   {
     title: 'Landing Pages',
     company: 'SaaS Fintech Platform',
